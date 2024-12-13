@@ -16,4 +16,15 @@ export class SplashComponent  implements OnInit {
     }, 2000);
   }
 
+  ionViewWillEnter() {
+    setTimeout(() => {
+      this.router.navigate(['/tasks']);
+    }, 2000);
+  }
+
+
+  redirect() {
+    this.router.navigate(['/tasks']);
+  }
+
 }

@@ -103,7 +103,7 @@ export class TaskFormModalComponent implements OnInit {
 
   async categoryAlert() {
     const alert = await this.alertController.create({
-      header: 'Error',
+      header: 'Advertencia',
       message: '¡No hay categorías creadas para crear una tarea! ¿Deseas crear una categoría?',
       buttons: [
         {

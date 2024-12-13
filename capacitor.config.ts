@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'gestiona-tus-pagos',
+  appId: 'com.tricode.tasklist',
+  appName: 'TaskList',
   webDir: 'www'
 };
 

@@ -8,11 +8,16 @@
 </ion-header>
 
 <ion-content>
-  <!-- Lista de categorías -->
-  <ion-list>
+  <div *ngIf="!categories || categories.length === 0" class="no-tasks-message">
+    <ion-label>
+      <h2>¡No tienes categorías creadas!</h2>
+      <p>Crea una categoría para comenzar a generar tus tareas.</p>
+    </ion-label>
+  </div>
+
+  <ion-list  *ngIf="categories && categories.length > 0">
     <ion-item *ngFor="let category of categories">
       {{ category["name"] }}
-      <!-- Botón para editar categoría -->
       <ion-button slot="end" fill="outline" (click)="openCategoryModal(category['id'], category['name'])">
         Editar
       </ion-button>

@@ -8,7 +8,14 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <div *ngIf="!tasks || tasks.length === 0" class="no-tasks-message">
+    <ion-label>
+      <h2>No tienes tareas completadas.</h2>
+      <p>Comienza a crear y completar tus tareas!</p>
+    </ion-label>
+  </div>
+
+  <ion-list  *ngIf="tasks && tasks.length > 0">
     <ion-item-sliding *ngFor="let task of tasks">
       <ion-item>
         <ion-label>
