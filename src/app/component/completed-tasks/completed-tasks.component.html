@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Tareas Realizadas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item-sliding *ngFor="let task of tasks">
+      <ion-item>
+        <ion-label>
+          <h2>{{ task["title"] }}</h2>
+          <p>Fecha para realizar: {{ task["dateToPerform"] | date:'dd-MM-yyyy' }}</p>
+          <p>Fecha de completación: {{
+            task["completedDate"] | date:'dd-MM-yyyy' }}</p>
+          <p>Prioridad: {{ task["priorityName"] }} | Categoría: {{ task["category"] }}</p>
+        </ion-label>
+        <ion-buttons slot="end">
+          <ion-button (click)="showTaskDetail(task)">
+            <ion-icon name="eye-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

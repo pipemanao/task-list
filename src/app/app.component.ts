@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Device } from '@capacitor/device';
-import { Platform } from '@ionic/angular';
+import { MenuController, Platform } from '@ionic/angular';
 import { SqliteService } from './services/sqlite.service';
 
 @Component({
@@ -14,7 +14,7 @@ export class AppComponent {
   public load: boolean;
 
   constructor(
-    private platform: Platform, private sqlite: SqliteService
+    private platform: Platform, private sqlite: SqliteService, private menuCtrl: MenuController
   ) {
     this.initApp();
     this.isWeb = false;
@@ -35,5 +35,13 @@ export class AppComponent {
 
     });
 
+  }
+
+  openMenu() {
+    this.menuCtrl.open('firstMenu');
+  }
+
+  closeMenu() {
+    this.menuCtrl.close();
   }
 }

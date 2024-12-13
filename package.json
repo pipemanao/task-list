@@ -30,6 +30,7 @@
     "@capacitor/preferences": "^6.0.3",
     "@capacitor/status-bar": "6.0.2",
     "@ionic/angular": "^8.0.0",
+    "crypto-browserify": "^3.12.1",
     "ionicons": "^7.0.0",
     "jeep-sqlite": "^2.8.0",
     "rxjs": "~7.8.0",

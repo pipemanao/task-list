@@ -1,0 +1,31 @@
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  /* Ocupa el 80% de la pantalla vertical */
+}
+
+.image-container img {
+  max-width: 500px;
+  /* Ajusta el tamaño del logo según sea necesario */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  /* Color del texto */
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+}

@@ -1,5 +1,5 @@
 {
-    "database": "gestionaGastos.db",
+    "database": "toDoList.db",
     "version": 1,
     "encrypted": false,
     "mode": "full",
@@ -8,8 +8,61 @@
             "name": "categories",
             "schema": [
                 {
+                    "column": "id",
+                    "value": "INTEGER PRIMARY KEY AUTOINCREMENT"
+                },
+                {
                     "column": "name",
-                    "value": "TEXT NOT NULL PRIMARY KEY"
+                    "value": "TEXT NOT NULL"
+                }
+            ]
+        },
+        {
+            "name": "todo",
+            "schema": [
+                {
+                    "column": "id",
+                    "value": "INTEGER PRIMARY KEY AUTOINCREMENT"
+                },
+                {
+                    "column": "title",
+                    "value": "TEXT NOT NULL"
+                },
+                {
+                    "column": "description",
+                    "value": "TEXT NOT NULL"
+                },
+                {
+                    "column": "category_id",
+                    "value": "INTEGER NOT NULL"
+                },
+                {
+                    "column": "priority",
+                    "value": "INTEGER NOT NULL"
+                },
+                {
+                    "column": "dateToPerform",
+                    "value": "DATETIME NOT NULL"
+                },
+                {
+                    "column": "completed",
+                    "value": "BOOLEAN NOT NULL DEFAULT FALSE"
+                },
+                {
+                    "column": "completedDate",
+                    "value": "DATETIME"
+                },
+                {
+                    "column": "deleted",
+                    "value": "BOOLEAN NOT NULL DEFAULT FALSE"
+                },
+                {
+                    "column": "deletedDate",
+                    "value": "DATETIME"
+                },
+                {
+                    "column": "creationDate",
+                    "value": "DATETIME"
                 }
             ]
         }
