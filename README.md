@@ -6,7 +6,6 @@
 
 - **Gestión de Tareas**: Los usuarios pueden agregar, editar y eliminar tareas.
 - **Interfaz de Usuario Intuitiva**: Diseño simple y amigable para facilitar la navegación.
-- **Notificaciones**: Recordatorios para que los usuarios no olviden sus tareas.
 - **Sincronización de Datos**: Mantiene actualizada la lista de tareas en el dispositivo.
 
 ## Tecnologías Utilizadas
@@ -15,7 +14,6 @@
 - **Capacitor**: Plataforma nativa moderna para desarrollar aplicaciones móviles con soporte completo para funciones nativas.
 - **Angular**: Framework para la creación de aplicaciones web de una sola página.
 - **SQLite**: Base de datos ligera para almacenar información localmente en el dispositivo.
-- **Webpack**: Herramienta para la compilación y empaquetado de los recursos del proyecto.
 
 ## Instalación
 
@@ -40,25 +38,30 @@ Para instalar y ejecutar este proyecto en tu entorno local, sigue los siguientes
    ```
 
  3. **Agrega la plataforma Android con Capacitor: Si no has agregado Android como plataforma, hazlo con el siguiente comando:**:
- ```bash
-    ionic capacitor add android
+   ```bash
+      ionic capacitor add android
   ```
 
 4. **Agrega la plataforma Android con Capacitor: Si no has agregado Android como plataforma, hazlo con el siguiente comando:**:
- ```bash
-    ionic capacitor add android
-  ```
+   ```bash
+      ionic capacitor add android
+    ```
 
 5. **Ejecuta el proyecto: Para abrir el proyecto en Android Studio y ejecutar la aplicación en un emulador o dispositivo conectado:**:
- ```bash
-    ionic capacitor open android
-  ```
+   ```bash
+      ionic capacitor open android
+    ```
 
 6. **Compila el proyecto para producción: Para crear una versión optimizada de la aplicación para Android:**:
- ```bash
-    ionic build --prod
-    ionic capacitor copy android
-    ionic capacitor sync android
-  ```
+   ```bash
+      ionic build --prod
+      ionic capacitor copy android
+      ionic capacitor sync android
+    ```
 
 7. **Ejecuta la aplicación en Android Studio: Puedes compilar y ejecutar la aplicación directamente desde Android Studio:**:
+
+## Contacto
+
+- **Correo**: [felipe.maldonado@tricode.cl](mailto:felipe.maldonado@tricode.cl)
+- **GitHub**: [https://github.com/pipemanao](https://github.com/pipemanao)
