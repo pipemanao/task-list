@@ -38,9 +38,9 @@ Para instalar y ejecutar este proyecto en tu entorno local, sigue los siguientes
    ```
 
  3. **Agrega la plataforma Android con Capacitor: Si no has agregado Android como plataforma, hazlo con el siguiente comando:**:
-   ```bash
-      ionic capacitor add android
-  ```
+     ```bash
+        ionic capacitor add android
+    ```
 
 4. **Agrega la plataforma Android con Capacitor: Si no has agregado Android como plataforma, hazlo con el siguiente comando:**:
    ```bash
